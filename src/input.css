@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+
+:root {
+    --bg: #e9eeff;
+    --bg-image:
+        radial-gradient(900px 500px at 10% 0%, #d3d9ff, transparent),
+        radial-gradient(800px 600px at 100% 40%, #cde5ff, transparent),
+        radial-gradient(700px 500px at 30% 100%, #e4d6ff, transparent);
+
+    --surface: rgba(255, 255, 255, .55);
+    --surface-border: rgba(255, 255, 255, .85);
+    --line: rgba(130, 130, 200, .18);
+
+    --fg: #1b2559;
+    --muted: #6b7599;
+
+    --accent: #4f6df5;
+    --accent-2: #8b5cf6;
+    --accent-3: #38bdf8;
+    --accent-4: #ec5fb5;
+    --accent-soft: rgba(79, 109, 245, .12);
+
+    --gradient-brand: linear-gradient(135deg, #5b7cff, #8b6cf6);
+
+    --success: #10b981;
+    --success-soft: rgba(16, 185, 129, .15);
+
+    --info: #38bdf8;
+    --info-soft: rgba(56, 189, 248, .18);
+
+    --pending: #8b5cf6;
+    --pending-soft: rgba(139, 92, 246, .18);
+
+    --danger: #ec5fb5;
+    --danger-soft: rgba(236, 95, 181, .18);
+
+    --chart-grid: rgba(130, 130, 200, .18);
+
+    --glass-shadow: 0 8px 30px rgba(90, 100, 200, .12);
+}
+
+[data-theme="dark"] {
+    --bg: #04060d;
+
+    --bg-image:
+        radial-gradient(700px 500px at 100% 0%, rgba(40, 90, 255, .28), transparent),
+        radial-gradient(600px 600px at 105% 55%, rgba(234, 100, 40, .38), transparent);
+
+    --surface: rgba(255, 255, 255, .04);
+    --surface-border: rgba(255, 255, 255, .08);
+    --line: rgba(255, 255, 255, .08);
+
+    --fg: #eef2ff;
+    --muted: #8793b5;
+
+    --accent: #3b82f6;
+    --accent-2: #8b5cf6;
+    --accent-3: #38bdf8;
+    --accent-4: #fb923c;
+    --accent-soft: rgba(59, 130, 246, .2);
+
+    --gradient-brand: linear-gradient(135deg, #3b82f6, #7c5cf6);
+
+    --success: #22c55e;
+    --success-soft: rgba(34, 197, 94, .15);
+
+    --info: #38bdf8;
+    --info-soft: rgba(56, 189, 248, .18);
+
+    --pending: #8b5cf6;
+    --pending-soft: rgba(139, 92, 246, .18);
+
+    --danger: #fb923c;
+    --danger-soft: rgba(251, 146, 60, .18);
+
+    --chart-grid: rgba(255, 255, 255, .08);
+
+    --glass-shadow: 0 8px 30px rgba(0, 0, 0, .45);
+}
+
+
+@theme inline {
+    --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+
+    --color-bg: var(--bg);
+    --color-surface: var(--surface);
+    --color-surface-border: var(--surface-border);
+    --color-line: var(--line);
+    --color-fg: var(--fg);
+    --color-muted: var(--muted);
+
+    --color-accent: var(--accent);
+    --color-accent-2: var(--accent-2);
+    --color-accent-3: var(--accent-3);
+    --color-accent-4: var(--accent-4);
+    --color-accent-soft: var(--accent-soft);
+
+    --color-success: var(--success);
+    --color-success-soft: var(--success-soft);
+
+    --color-info: var(--info);
+    --color-info-soft: var(--info-soft);
+
+    --color-pending: var(--pending);
+    --color-pending-soft: var(--pending-soft);
+
+    --color-danger: var(--danger);
+    --color-danger-soft: var(--danger-soft);
+
+    --color-chart-grid: var(--chart-grid);
+
+    --radius-card: 20px;
+    --radius-control: 12px;
+
+    --shadow-glass: var(--glass-shadow);
+    --blur-glass: 18px;
+}
+
+
+@utility bg-page {
+    background-color: var(--bg);
+    background-image: var(--bg-image);
+    background-attachment: fixed;
+}
+
+@utility bg-brand {
+    background-image: var(--gradient-brand);
+}
+
+@utility bg-grad-revenue {
+    background-image: linear-gradient(135deg, #5b7cff, #7c8cff);
+}
+
+@utility bg-grad-orders {
+    background-image: linear-gradient(135deg, #38bdf8, #60a5fa);
+}
+
+@utility bg-grad-customers {
+    background-image: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+
+@utility bg-grad-aov {
+    background-image: linear-gradient(135deg, #ec5fb5, #f472b6);
+}
+
+
+@utility glass {
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
