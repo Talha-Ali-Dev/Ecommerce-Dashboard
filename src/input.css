@@ -156,3 +156,7 @@
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
 }
+
+body{
+    background-image: var(--bg-image);
+}
