@@ -1853,6 +1853,432 @@
 
             </div>
 
+            <div class="flex flex-col gap-4 mt-4 hidden" id="customers">
+
+                <div class="intro">
+                    <p class="text-muted text-sm">892 new customers this month.
+                    </p>
+
+                    <h1 class="text-fg text-3xl font-bold">Customers</h1>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+                    <!-- Total Customers  -->
+                    <div class="bg-bg p-6 rounded-md border border-surface-border text-muted flex flex-col gap-2">
+
+                        <div class="size-11 bg-accent-2/80 rounded-md flex justify-center items-center text-white">
+
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 20v-2a4 4 0 0 0-8 0v2M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 20v-2a4 4 0 0 0-3-3.8">
+                                </path>
+                            </svg>
+
+                        </div>
+
+                        <p>Total Customers</p>
+
+                        <h3 class="totalRevenue text-3xl font-bold text-fg">8,420</h3>
+
+                        <p>↑ 24.1%vs. previous month</p>
+
+                    </div>
+
+                    <!-- Lifetime Value  -->
+                    <div class="bg-bg p-6 rounded-md border border-surface-border text-muted flex flex-col gap-2">
+
+                        <div class="size-11 bg-accent/80 rounded-md flex justify-center items-center text-white">
+
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v10M9.5 9.5C10 8.5 14 8.5 14.5 10s-5 2-5 4 4.5 1.5 5 .5">
+                                </path>
+                            </svg>
+
+                        </div>
+
+                        <p>Lifetime Value</p>
+
+                        <h3 class="totalOrders text-3xl font-bold text-fg">$212</h3>
+
+                        <p>↑ 9.2%vs. previous month</p>
+
+                    </div>
+
+                    <!-- New Customers  -->
+                    <div class="bg-bg p-6 rounded-md border border-surface-border text-muted flex flex-col gap-2">
+
+                        <div class="size-11 bg-accent-3/80 rounded-md flex justify-center items-center text-white">
+
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 4h3l3 12h9l3-8H7M10 21h.01M17 21h.01"></path>
+                            </svg>
+
+                        </div>
+
+                        <p>Repeat Rate</p>
+
+                        <h3 class="newCustomers text-3xl font-bold text-fg">34.6%</h3>
+
+                        <p>↑ 3.8%vs. previous month</p>
+
+                    </div>
+
+                </div>
+
+                <div id="all-customers" class="bg-bg p-6 rounded-md border border-surface-border">
+
+                    <table class="text-left w-full">
+
+                        <thead class="border-b border-neutral-300">
+
+                            <tr class="text-xs text-muted">
+
+                                <th class="px-2 py-2" colspan="2">Customer</th>
+                                <th class="py-2 pl-2" colspan="2">Email</th>
+                                <th class="px-2 py-2">Orders</th>
+                                <th class="px-2 py-2">Spent</th>
+                                <th class="px-2 py-2">Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody class="">
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="px-2 py-2" colspan="2">
+
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            EC
+
+                                        </div>
+                                        <p> Emily Carter</p>
+                                    </div>
+
+                                </td>
+
+                                <td class="py-2 pl-2" colspan="2">emily@gmail.com</td>
+
+
+                                <td class="px-2 py-2">14</td>
+
+                                <td class="px-2 py-2">$44,118</td>
+
+                                <td class="px-2 py-2">
+                                    <p class="px-1.5 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                        id="status">Active</p>
+                                </td>
+
+
+                            </tr>
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="py-2 pl-2" colspan="2">
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            DK
+
+                                        </div>
+                                        <p> Daniel Kim</p>
+                                    </div>
+                                </td>
+                                <td class="px-2 py-2" colspan="2"> daniel@gmail.com</td>
+                                <td class="px-2 py-2">
+
+                                    <p> 9</p>
+
+                                </td>
+                                <td class="px-2 py-2">$25,009</td>
+                                <td class="px-2 py-2">
+                                    <p class="px-1.5 py-1.5 bg-accent-2/20 rounded-md text-accent-2 font-semibold text-xs text-center"
+                                        id="status">Pending</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="py-2 pl-2" colspan="2">
+
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            SL
+
+                                        </div>
+                                        <p> Sophia Lee</p>
+                                    </div>
+
+                                </td>
+                                <td class="px-2 py-2" colspan="2">sophia@gmail.com</td>
+                                <td class="px-2 py-2">
+
+                                    <p> 6</p>
+
+                                </td>
+                                <td class="px-2 py-2">$43,581</td>
+                                <td class="px-2 py-2">
+                                    <p class="px-1.5 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                        id="status">Active</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="py-2 pl-2" colspan="2">
+
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            JW
+
+                                        </div>
+                                        <p>James Wilson</p>
+                                    </div>
+
+                                </td>
+                                <td class="px-2 py-2" colspan="2">james@gmail.com</td>
+                                <td class="px-2 py-2">
+
+                                    <p>12</p>
+
+                                </td>
+                                <td class="px-2 py-2">$8,415</td>
+                                <td class="px-2 py-2">
+                                    <p class="px-1.5 py-1.5 bg-accent-2/20 rounded-md text-accent-2 font-semibold text-xs text-center"
+                                        id="status">Pending</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="py-2 pl-2" colspan="2">
+
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            OB
+
+                                        </div>
+                                        <p>Olivia Brown</p>
+                                    </div>
+
+                                </td>
+                                <td class="px-2 py-2" colspan="2">olivia@gmail.com</td>
+                                <td class="px-2 py-2">
+
+                                    <p>10</p>
+
+                                </td>
+                                <td class="px-2 py-2">$25,009</td>
+                                <td class="px-2 py-2">
+                                    <p class="px-1.5 py-1.5 bg-accent-2/20 rounded-md text-accent-2 font-semibold text-xs text-center"
+                                        id="status">Pending</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="py-2 pl-2" colspan="2">
+
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            ND
+
+                                        </div>
+                                        <p>Noah Davis</p>
+                                    </div>
+
+                                </td>
+                                <td class="px-2 py-2" colspan="2">Noah Davis</td>
+                                <td class="px-2 py-2">
+
+                                    <p>5</p>
+
+                                </td>
+                                <td class="px-2 py-2">$110.00</td>
+                                <td class="px-2 py-2">
+
+                                    <p class="px-1.5 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                        id="status">Active</p>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="py-2 pl-2" colspan="2">
+
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            AM
+
+                                        </div>
+                                        <p>Ava Martinez</p>
+                                    </div>
+
+                                </td>
+                                <td class="px-2 py-2" colspan="2">ava@gmail.com</td>
+                                <td class="px-2 py-2">
+
+                                    <p>7</p>
+
+                                </td>
+                                <td class="px-2 py-2">$79.00</td>
+                                <td class="px-2 py-2">
+                                    <p class="px-1.5 py-1.5 bg-success-soft rounded-md text-success font-semibold text-xs text-center"
+                                        id="status">Active</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="py-2 pl-2" colspan="2">
+
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            LJ
+
+                                        </div>
+                                        <p>Liam Johnson</p>
+                                    </div>
+
+                                </td>
+                                <td class="px-2 py-2" colspan="2">liam@gmail.com</td>
+                                <td class="px-2 py-2">
+
+                                    <p>6</p>
+
+                                </td>
+                                <td class="px-2 py-2">$32.00</td>
+                                <td class="px-2 py-2">
+                                    <p class="px-1.5 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                        id="status">Active</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="py-2 pl-2" colspan="2">
+
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            MA
+
+                                        </div>
+                                        <p>Mia Anderson</p>
+                                    </div>
+
+                                </td>
+                                <td class="px-2 py-2" colspan="2">mia@gmail.com</td>
+                                <td class="px-2 py-2">
+
+                                    <p>6</p>
+
+                                </td>
+                                <td class="px-2 py-2">$129.00</td>
+                                <td class="px-2 py-2">
+                                    <p class="px-1.5 py-1.5 bg-accent-2/20 rounded-md text-accent-2 font-semibold text-xs text-center"
+                                        id="status">Pending</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="py-2 pl-2" colspan="2">
+
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            LM
+
+                                        </div>
+                                        <p> Lucas Moore</p>
+                                    </div>
+
+                                </td>
+                                <td class="px-2 py-2" colspan="2">lucas@gmail.com</td>
+                                <td class="px-2 py-2">
+
+                                    <p>12</p>
+
+                                </td>
+                                <td class="px-2 py-2">$199.00</td>
+                                <td class="px-2 py-2">
+                                    <p class="px-1.5 py-1.5 bg-accent-2/20 rounded-md text-accent-2 font-semibold text-xs text-center"
+                                        id="status">Pending</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                <td class="py-2 pl-2" colspan="2">
+
+                                    <div class="flex justify-start items-center gap-2">
+                                        <div
+                                            class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xs font-bold">
+
+                                            LM
+
+                                        </div>
+                                        <p>Liam Moore</p>
+                                    </div>
+
+                                </td>
+                                <td class="px-2 py-2" colspan="2">liam@gmail.com</td>
+                                <td class="px-2 py-2">
+
+                                    <p>7</p>
+
+                                </td>
+                                <td class="px-2 py-2">$54.0</td>
+                                <td class="px-2 py-2">
+                                    <p class="px-1.5 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                        id="status">Active</p>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
 
 
 
