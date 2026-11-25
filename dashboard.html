@@ -2837,7 +2837,550 @@
 
             </div>
 
-           
+            <div class="flex flex-col gap-4 mt-4" id="discounts">
+
+                <div class="intro">
+                    <p class="text-muted text-sm">Coupons and promotions.
+                    </p>
+
+                    <h1 class="text-fg text-3xl font-bold">Discounts</h1>
+                </div>
+
+                <!-- Orders -->
+                <div class="bg-surface p-6 rounded-md border border-surface-border text-muted flex flex-col gap-2">
+
+                    <div class="">
+
+                        <div class="flex justify-start items-center gap-2">
+                            <div class="size-8 rounded-md flex justify-center items-center text-accent bg-accent-soft">
+
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 12V3h9l9 9-9 9zM7.5 7.5h.01"></path>
+                                </svg>
+
+                            </div>
+
+                            <h3 class="newCustomers text-fg font-semibold text-sm">Discount Codes</h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="all-products" class="">
+
+                        <table class="text-left w-full">
+
+                            <thead class="border-b border-neutral-300">
+
+                                <tr class="text-xs text-muted">
+
+                                    <th class="py-2 pl-2" colspan="2">Code</th>
+                                    <th class="px-2 py-2" colspan="2">Discount</th>
+                                    <th class="px-2 py-2">Used</th>
+                                    <th class="px-2 py-2">Status</th>
+                                    <th class="px-2 py-2">Enabled</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="">
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2 text-fg font-bold" colspan="2">WELCOME10</td>
+
+
+                                    <td class="px-2 py-2" colspan="2">
+
+                                        <p>10% off</p>
+
+                                    </td>
+
+                                    <td class="px-2 py-2">312</td>
+
+                                    <td class="px-2 py-2 flex justify-start items-start">
+                                        <p class="px-4 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                            id="status">Active</p>
+                                    </td>
+
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2 text-fg font-bold" colspan="2">SPRING25</td>
+                                    <td class="px-2 py-2" colspan="2">
+
+                                        <p> 25% off</p>
+
+                                    </td>
+                                    <td class="px-2 py-2">148</td>
+                                    <td class="px-2 py-2 flex justify-start items-start">
+                                        <p class="px-4 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                            id="status">Active</p>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2 text-fg font-bold" colspan="2">FREESHIP</td>
+                                    <td class="px-2 py-2">Free shipping</td>
+                                    <td class="px-2 py-2" colspan="2">
+
+                                        <p> 521</p>
+
+                                    </td>
+
+                                    <td class="px-2 py-2 flex justify-start items-start">
+                                        <p class="px-4 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                            id="status">Active</p>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2 text-fg font-bold" colspan="2">VIP40</td>
+                                    <td class="px-2 py-2" colspan="2">40% off</td>
+
+                                    <td class="px-2 py-2">
+
+                                        <p> 22</p>
+
+                                    </td>
+                                    <td class="px-2 py-2 flex justify-start items-start">
+                                        <p class="px-4 py-1.5 bg-accent-3/20 rounded-md text-accent-3 font-semibold text-xs text-center"
+                                            id="status">Schedule</p>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2 text-fg font-bold" colspan="2">BLACKFRI</td>
+                                    <td class="px-2 py-2" colspan="2">30% off</td>
+                                    <td class="px-2 py-2">
+
+                                        <p> 860</p>
+
+                                    </td>
+                                    <td class="px-2 py-2 flex justify-start items-start">
+                                        <p class="px-4 py-1.5 bg-accent-4/20 rounded-md text-accent-4 font-semibold text-xs text-center"
+                                            id="status">Expired</p>
+                                    </td>
+
+                                    <td></td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div id="delivered-products" class="hidden">
+
+                        <table class="text-left w-full">
+
+                            <thead class="border-b border-neutral-300">
+
+                                <tr class="text-xs text-muted">
+
+                                    <th class="py-2 pl-2">#</th>
+                                    <th class="px-2 py-2">Customer</th>
+                                    <th class="px-2 py-2" colspan="2">Product</th>
+                                    <th class="px-2 py-2">Amount</th>
+                                    <th class="px-2 py-2">Status</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="">
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1024</td>
+
+                                    <td class="px-2 py-2">Emily Carter</td>
+
+                                    <td class="px-2 py-2" colspan="2">
+
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                🎧
+
+                                            </div>
+                                            <p> Aero wireless headphones</p>
+                                        </div>
+
+                                    </td>
+
+                                    <td class="px-2 py-2">$44,118</td>
+
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                            id="status">Delivered</p>
+                                    </td>
+
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1023</td>
+                                    <td class="px-2 py-2"> Daniel Kim</td>
+                                    <td class="px-2 py-2" colspan="2">
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                🎒
+
+                                            </div>
+                                            <p> Minimalist Backpack</p>
+                                        </div>
+                                    </td>
+                                    <td class="px-2 py-2">$25,009</td>
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-accent-3/20 rounded-md text-accent-3 font-semibold text-xs text-center"
+                                            id="status">Processing</p>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1022</td>
+                                    <td class="px-2 py-2">Sophia Lee</td>
+                                    <td class="px-2 py-2" colspan="2">
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                ⌚
+
+                                            </div>
+                                            <p> Smart Watch Pro</p>
+                                        </div>
+                                    </td>
+                                    <td class="px-2 py-2">$43,581</td>
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                            id="status">Delivered</p>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1021</td>
+                                    <td class="px-2 py-2">James Wilson</td>
+                                    <td class="px-2 py-2" colspan="2">
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                👕
+
+                                            </div>
+                                            <p> Organic Cotton T-Shirt</p>
+                                        </div>
+                                    </td>
+                                    <td class="px-2 py-2">$8,415</td>
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-accent-2/20 rounded-md text-accent-2 font-semibold text-xs text-center"
+                                            id="status">Pending</p>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1020</td>
+                                    <td class="px-2 py-2">Olivia Brown</td>
+                                    <td class="px-2 py-2" colspan="2">
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                ☕
+
+                                            </div>
+                                            <p> Ceramic Coffe Mug</p>
+                                        </div>
+                                    </td>
+                                    <td class="px-2 py-2">$25,009</td>
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-accent-3/20 rounded-md text-accent-3 font-semibold text-xs text-center"
+                                            id="status">Processing</p>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div id="processing-products" class="hidden">
+
+                        <table class="text-left w-full">
+
+                            <thead class="border-b border-neutral-300">
+
+                                <tr class="text-xs text-muted">
+
+                                    <th class="py-2 pl-2">#</th>
+                                    <th class="px-2 py-2">Customer</th>
+                                    <th class="px-2 py-2" colspan="2">Product</th>
+                                    <th class="px-2 py-2">Amount</th>
+                                    <th class="px-2 py-2">Status</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="">
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1024</td>
+
+                                    <td class="px-2 py-2">Emily Carter</td>
+
+                                    <td class="px-2 py-2" colspan="2">
+
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                🎧
+
+                                            </div>
+                                            <p> Aero wireless headphones</p>
+                                        </div>
+
+                                    </td>
+
+                                    <td class="px-2 py-2">$44,118</td>
+
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                            id="status">Delivered</p>
+                                    </td>
+
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1023</td>
+                                    <td class="px-2 py-2"> Daniel Kim</td>
+                                    <td class="px-2 py-2" colspan="2">
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                🎒
+
+                                            </div>
+                                            <p> Minimalist Backpack</p>
+                                        </div>
+                                    </td>
+                                    <td class="px-2 py-2">$25,009</td>
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-accent-3/20 rounded-md text-accent-3 font-semibold text-xs text-center"
+                                            id="status">Processing</p>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1022</td>
+                                    <td class="px-2 py-2">Sophia Lee</td>
+                                    <td class="px-2 py-2" colspan="2">
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                ⌚
+
+                                            </div>
+                                            <p> Smart Watch Pro</p>
+                                        </div>
+                                    </td>
+                                    <td class="px-2 py-2">$43,581</td>
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                            id="status">Delivered</p>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div id="pending-products" class="hidden">
+
+                        <table class="text-left w-full">
+
+                            <thead class="border-b border-neutral-300">
+
+                                <tr class="text-xs text-muted">
+
+                                    <th class="py-2 pl-2">#</th>
+                                    <th class="px-2 py-2">Customer</th>
+                                    <th class="px-2 py-2" colspan="2">Product</th>
+                                    <th class="px-2 py-2">Amount</th>
+                                    <th class="px-2 py-2">Status</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="">
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1022</td>
+                                    <td class="px-2 py-2">Sophia Lee</td>
+                                    <td class="px-2 py-2" colspan="2">
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                ⌚
+
+                                            </div>
+                                            <p> Smart Watch Pro</p>
+                                        </div>
+                                    </td>
+                                    <td class="px-2 py-2">$43,581</td>
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-success/20 rounded-md text-success font-semibold text-xs text-center"
+                                            id="status">Delivered</p>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1021</td>
+                                    <td class="px-2 py-2">James Wilson</td>
+                                    <td class="px-2 py-2" colspan="2">
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                👕
+
+                                            </div>
+                                            <p> Organic Cotton T-Shirt</p>
+                                        </div>
+                                    </td>
+                                    <td class="px-2 py-2">$8,415</td>
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-accent-2/20 rounded-md text-accent-2 font-semibold text-xs text-center"
+                                            id="status">Pending</p>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1020</td>
+                                    <td class="px-2 py-2">Olivia Brown</td>
+                                    <td class="px-2 py-2" colspan="2">
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                ☕
+
+                                            </div>
+                                            <p> Ceramic Coffe Mug</p>
+                                        </div>
+                                    </td>
+                                    <td class="px-2 py-2">$25,009</td>
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-accent-3/20 rounded-md text-accent-3 font-semibold text-xs text-center"
+                                            id="status">Processing</p>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div id="cancelled-products" class="hidden">
+
+                        <table class="text-left w-full">
+
+                            <thead class="border-b border-neutral-300">
+
+                                <tr class="text-xs text-muted">
+
+                                    <th class="py-2 pl-2">#</th>
+                                    <th class="px-2 py-2">Customer</th>
+                                    <th class="px-2 py-2" colspan="2">Product</th>
+                                    <th class="px-2 py-2">Amount</th>
+                                    <th class="px-2 py-2">Status</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="">
+
+                                <tr class="text-fg text-sm border-b border-neutral-300">
+
+                                    <td class="py-2 pl-2">#1020</td>
+                                    <td class="px-2 py-2">Olivia Brown</td>
+                                    <td class="px-2 py-2" colspan="2">
+                                        <div class="flex justify-start items-center gap-2">
+                                            <div
+                                                class="size-10 rounded-md flex justify-center items-center text-accent bg-accent-soft text-xl">
+
+                                                ☕
+
+                                            </div>
+                                            <p> Ceramic Coffe Mug</p>
+                                        </div>
+                                    </td>
+                                    <td class="px-2 py-2">$25,009</td>
+                                    <td class="px-2 py-2">
+                                        <p class="px-1.5 py-1.5 bg-accent-3/20 rounded-md text-accent-3 font-semibold text-xs text-center"
+                                            id="status">Processing</p>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+            </div>
 
 
     </div>
